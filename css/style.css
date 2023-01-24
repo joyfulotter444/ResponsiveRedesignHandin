@@ -1,0 +1,123 @@
+.odd{
+  background-color: #fffFFF;
+}
+
+.even{
+  background-color: #52AEC9;
+}
+
+.oddH{
+  color: #52AEC9
+}
+
+.evenH{
+  color: #202A44
+}
+
+.oddText{
+  color:#202A44
+}
+
+.evenText{
+  color:#FFFFFF
+}
+
+h1{
+  font-size: 5rem!important;
+  color: #fffFFF!important;
+}
+
+h2{
+  text-align: center;
+  font-size: 3rem!important;
+}
+
+h3{
+  text-align: center;
+}
+
+#navbarContainer{
+    height: 3rem;
+    background-color: #52AEC9;
+}
+
+body{
+  background-color: #52AEC9!important;
+}
+
+#navbar{
+    background-color: #52AEC9;
+}
+
+#home{
+    background-color: #52AEC9;
+}
+
+.nav-link{
+    color: #202A44!important;
+}
+.nav-link:hover {
+    color: #FFFFFF!important;
+  }
+#projects{
+  background-color: #52AEC9}
+
+.projectCard{
+    height: 8rem!important;
+}
+
+#contact{
+    background-color:#52AEC9;
+    color: #202A44;
+  }
+
+#about{
+  background-color: #066E7B;
+}
+
+#about-h{
+    color: #FFFFFF;
+}
+
+.btn{
+    background-color: #066e7b!important;
+    border-color: #066E7B!important;
+}
+
+.btn:hover{
+    background-color:#202A44!important;
+    border-color: #202A44!important;
+}
+
+.card-body{
+    color: #202A44;
+}
+
+.inner{
+  background-color: #52AEC9;
+  color:#FFFFFF;
+  border-style: solid;
+  border-color: #202A44;
+  border-width: 0.8rem;
+  width: 30rem!important;
+}
+
+#aboutInner{
+  text-align: left;
+}
+
+footer{
+  background-color: #202A44;
+  color: white;
+}
+
+body{
+    background-color: #52AEC9;
+}
+  /* for the Samsung Galaxy S8 or other very small screens*/
+/* @media screen and (max-width: 375px) {
+  #search{
+    width: 75%;}
+    } */
+
+

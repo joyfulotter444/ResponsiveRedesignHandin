@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> HandInPage </title>
+    <link rel="stylesheet" href= "css/style.css">
+    <!--bootstrap css CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+
+  <body class="m-0 p-0">
+    <!--bootstrap js CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" id="navbar">
+      <div class="container-fluid" id="navbarContainer" >
+        <a class="navbar-brand fs-1 ps-2 m-0" aria-label="not a real link"> Website Redesign </a>
+        <!--button and toggle for hamburger menu adapted from https://getbootstrap.com/docs/5.0/components/navbar/-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--collapsable items-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <!--less bottom margin when screen is large-->
+          <ul class="navbar-nav mb-2 mb-lg-0 fs-3">
+            <li class="nav-item"> <a class="nav-link" href="#Intro"> Introduction </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#Body1"> Body1 </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#Body2"> Body2 </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#Body3"> Body3 </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#Body4"> Body4 </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#Body5"> Body5 </a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#Outro"> Conclusion </a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--home section-->
+    <div id="home" class="container-fluid text-center pt-4 pb-5">
+        <h1> Website Redesign </h1>
+    </div>
+
+    <div class="row">
+    <!--introduction-->
+    <div class="container-fluid justify-content-center odd pt-5 pb-4" style="padding-left: 15rem; padding-right: 15rem;" id="Intro">
+        <h2 class="oddH"> Introduction </h2>
+        <div class="container-fluid text-left oddText">
+          <p> 
+            For this project, I wanted to practice all parts of designing a responsive 
+            website's layout and visuals, starting from lofi-prototyping all the
+            way through coding it with HTML and CSS Bootstrap. 
+          </p>
+          <p>
+            I choose the website <a href="http://www.pnwx.com/">pnwx.com</a>,
+            a website for the radiation protection retailer 
+            <abbr title="Pacfic Northwest X-Ray Inc."> PNWX </abbr> (Pacfic Northwest X-Ray Inc.),
+            because it still has the style of a website from decades ago and 
+            its layout is baffling for a modern internet user. Below I outline
+            step by step how I go through the process of redesigning the website.
+          </p>
+        </div>
+    </div>
+
+    <!--body 1-->
+    <div class="container-fluid justify-content-center even pt-5 pb-4" style="padding-left: 15rem; padding-right: 15rem;" id="Body1">
+      <h2 class="evenH"> Analyzing Usability and Accessibility Problems </h2>
+      <div class="container-fluid text-left evenText">
+        <p> Before starting my lofi-prototyping, I analyzed the original website 
+          for usability and accesibility problems I wanted to fix. 
+          <br>
+          To show accesibility issues, I ran the website through the Web Accessibility Evaluation Tool (WAVE).</p>
+        <ul> <strong> Usability Problems </strong>
+          <li> Hierarchy: A lack of headers makes the page difficult to navigate. </li>
+          <li> Navigation: There is no way to navigate the page except through product links </li>
+          <li> Learnability: The arrow pointing to the search bar on the original 
+            website looks like a button but it's not </li>
+          <li> Memorability: There is nothing to remember the website by, not even an about section for the company</li>
+          <li> Mental Model: The websites cheesy font doesn't fit with what 
+            users expect from a serious company concerned about safety</li>
+          <li> Responsiveness: the website's layout and text doesn't change for 
+          different screen sizes, making it difficult to read on phones and tables</li>
+        </ul>
+        <ul> <strong class="ft"> Accessibility Problems </strong>
+          <li> Missing alt text: The skull and arrow images are missing alt text, 
+            negatively impacting screen readers </li>
+          <li> Low contrast: Where the black text falls on a dark blue background 
+            the contrast is low, which could make it difficult to read </li>
+          <li> Lack of Headers: There are no header elements in the code of the page, so any hierarchy on the website 
+            that is communicated visually won't show up for screen readers</li>
+        </ul>
+        <p> While I disagree with the low-contrast warnings, as I think all of the
+           text is easily readable when it is an apprioprate size, I agree with 
+           all the other issues identified.</p>
+      </div>
+    </div>
+
+    <!-- lo and hifi prototypes made using Figma and Balsamiq -->
+    <!--annotations from https://www.figma.com/community/file/806626024182535168-->
+
+    <!--body 2-->
+    <div class="container-fluid justify-content-center odd pt-5 pb-4" style="padding-left: 15rem; padding-right: 15rem;" id="Body2">
+      <h2 class="oddH"> Lofi-Prototypes </h2>
+      <div class="container-fluid text-left oddText">
+        <p> I designed three lofi-prototypes to address the problems noted above,
+          one prototype each for a phone, tablet, and laptop sized screen. 
+          The prototypes are annotated with what problems they solve.
+        </p>
+        <div class="row text-center g-5">
+          <div class="col-sm-12 flex-column">
+            <figure class="figure">
+              <img src="images/lofiWebPage.png" class="figure-img img-fluid rounded" alt="lofiWebsite">
+              <figcaption class="figure-caption">laptop prototype</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-12 flex-column">
+            <figure class="figure">
+              <img src="images/lofiTablet.png" class="figure-img img-fluid rounded" alt="lofiTablet">
+              <figcaption class="figure-caption">tablet prototype</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-12 flex-column">
+            <figure class="figure">
+              <img src="images/lofiPhone.png" class="figure-img img-fluid rounded" alt="lofiPhone">
+              <figcaption class="figure-caption">phone prototype</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--body 3-->
+    <div class="container-fluid justify-content-center even pt-5 pb-4" style="padding-left: 15rem; padding-right: 15rem;" id="Body3">
+      <h2 class="evenH"> Hifi-Prototypes </h2>
+      <div class="container-fluid text-left evenText">
+        <p> I designed three hifi-prototypes to plan out my website,
+          one prototype each for a phone, tablet, and laptop sized screen. 
+          The prototypes are annotated with the Bootstrap classes and styles I plan to use </p>
+      </div>
+      <div class="row text-center g-5">
+        <div class="col-sm-12 flex-column">
+          <figure class="figure">
+            <img src="images/hifiWebpage.png" class="figure-img img-fluid rounded" alt="hifiWebsite">
+            <figcaption class="figure-caption">laptop prototype</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-12 flex-column">
+          <figure class="figure">
+            <img src="images/hifiTablet.png" class="figure-img img-fluid rounded" alt="hifiTablet">
+            <figcaption class="figure-caption">tablet prototype</figcaption>
+          </figure>
+        </div>
+        <div class="col-sm-12 flex-column">
+          <figure class="figure">
+            <img src="images/hifiWebpage.png" class="figure-img img-fluid rounded" alt="hifiPhone">
+            <figcaption class="figure-caption">phone prototype</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+
+    <!--body4-->
+    <!--template from https://www.figma.com/community/file/1171897776098477684-->
+    <div class="container-fluid justify-content-center odd pt-5 pb-4" style="padding-left: 15rem; padding-right: 15rem;" id="Body4">
+      <h2 class="oddH"> Style </h2>
+      <div class="container-fluid text-left oddText">
+        <p> I also produced a style guide showing what text styles and what kinds of interactions I want to use </p>
+        <figure class="figure">
+          <img src="images/Group 1.png" class="figure-img img-fluid rounded" alt="hifiPhone">
+        <figcaption class="figure-caption">style guide </figcaption>
+      </div>
+    </div>
+
+    <!--conclusion-->
+    <div class="container-fluid justify-content-center even pt-5 pb-4" style="padding-left: 15rem; padding-right: 15rem;" id="#Outro">
+      <h2 class="evenH"> Website </h2>
+      <div class="container-fluid text-left evenText">
+        <p> Finally I coded the website! Visit it here <a href="https://joyfulotter444.github.io/ResponsiveRedesign/"> PNWX </a> </p>
+      </div>
+    </div>
+    </div>
+
+    <footer class="text-center"> Created by Jane Doe </footer>
+  
+  </body>
+</html>
